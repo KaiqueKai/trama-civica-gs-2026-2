@@ -1,0 +1,289 @@
+{
+  "projeto": "TRAMA CIVICA",
+  "versao_avaliacao": "3.3-GEMINI-DIAGNOSTICO-GT-ASSISTIDO-OPENAI-COMPAT",
+  "provedor_inferencia": "Google Gemini Developer API",
+  "modelo_geracao_e_juiz": "gemini-3.5-flash-lite",
+  "embeddings": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "top_k": 2,
+  "metricas_configuradas": [
+    "faithfulness",
+    "answer_relevancy",
+    "context_precision",
+    "context_recall"
+  ],
+  "ground_truth_origem": "Rascunhos assistidos por IA com base em MOB-001 a MOB-005; autoria do trio nao declarada; revisao manual pendente.",
+  "ground_truth_autoria_trio_validada": false,
+  "uso_resultado": "DIAGNOSTICO_INTERNO_NAO_SUBMETER_COMO_GT_PROPRIO",
+  "perguntas_exigidas": 8,
+  "perguntas_processadas": 8,
+  "status": "MEDIDO_COMPLETO_8_DE_8_DIAGNOSTICO_GT_ASSISTIDO",
+  "metricas_medias": {
+    "faithfulness": 0.7798,
+    "answer_relevancy": 0.7025,
+    "context_precision": 0.875,
+    "context_recall": 0.5958
+  },
+  "perguntas": {
+    "Q01": {
+      "nivel": "simples",
+      "pergunta": "Qual linha liga o Jardim Azul ao Terminal Centro?",
+      "ground_truth": "A Linha 714 liga o Jardim Azul (P04) ao Terminal Centro (P01), passando pela Escola Técnica (P03) e pela Praça das Flores (P02), no sentido bairro-centro. O itinerário atende dias úteis e sábados. Fontes: MOB-001 e MOB-003.",
+      "resposta": "Com base nos documentos fornecidos, a linha que liga o Jardim Azul ao Terminal Centro é a **Linha 714** [DOC_ID=MOB-001, DOC_ID=MOB-003].",
+      "contextos": [
+        "A Secretaria Municipal de Mobilidade de Vale Sereno publica este itinerario simulado para a Linha 714, que conecta o bairro Jardim Azul ao Terminal Centro. O percurso de referencia no sentido bairro-centro inicia no ponto P04 - Jardim Azul, segue pelo ponto P03 - Escola Tecnica, passa pelo ponto P02 - Praca das Flores e termina no ponto P01 - Terminal Centro. O percurso inverso realiza a sequencia na ordem contraria, respeitadas as orientacoes operacionais do motorista e da fiscalizacao.\n\nO tempo programado entre P04 e P01 e de 32 minutos em condicoes ordinarias. Esse valor e uma referencia operacional, nao uma garantia de chegada: ocorrencias viarias, chuva, obras e variacoes de trafego podem alterar o tempo real. O passageiro deve considerar margem adicional quando houver compromisso com horario fixo. A linha atende os dias uteis e sabados; aos domingos e feriados opera em tabela",
+        "A Portaria Operacional simulada 018/2026 consolida a identificacao dos pontos de parada da Linha 714 e registra a situacao verificada na data de sua publicacao. Para o trecho Jardim Azul - Terminal Centro, permanecem cadastrados P04 - Jardim Azul, P03 - Escola Tecnica, P02 - Praca das Flores e P01 - Terminal Centro. Na data de 18 de outubro de 2026, os quatro pontos estavam ativos para embarque e desembarque, observadas as condicoes de acessibilidade descritas no laudo MOB-004.\n\nA portaria determina que a Central de Operacoes mantenha o codigo do ponto nos avisos destinados aos passageiros. A alteracao temporaria de local de embarque deve ser comunicada por aviso especifico, com data de inicio, data de termino prevista, ponto substituto e condicoes de acessibilidade. Quando houver comunicacao posterior e especifica para um ponto, a situacao nela descrita prevalece durante o intervalo de"
+      ],
+      "fontes": [
+        "MOB-001",
+        "MOB-003"
+      ],
+      "trace_ferramentas": [],
+      "metricas": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.9926,
+        "context_precision": 1.0,
+        "context_recall": 0.6667
+      },
+      "status": "CONCLUIDA"
+    },
+    "Q02": {
+      "nivel": "simples",
+      "pergunta": "Quais sao as partidas acessiveis da Linha 714 aos sabados?",
+      "ground_truth": "Aos sábados, as partidas acessíveis da Linha 714 no ponto inicial P04 são 06:40, 07:20, 08:00, 09:20 e 10:00. A partida das 08:40 não possui confirmação de veículo acessível e não deve ser recomendada a quem depende desse recurso. Fonte: MOB-002.",
+      "resposta": "Com base no documento fornecido ([DOC_ID=MOB-002]), com vigência de 10/10/2026 a 30/11/2026 e publicado em 04/10/2026, as partidas acessíveis da Linha 714 aos sábados são: **06:40, 07:20, 08:00, 09:20 e 10:00**. \n\nA partida das 08:40 aos sábados não possui confirmação de veículo acessível [DOC_ID=MOB-002].",
+      "contextos": [
+        "ataforma elevatoria em condicao de uso. As demais partidas nao possuem confirmacao de acessibilidade neste quadro.\n\nAos sabados, as partidas sao 06:40, 07:20, 08:00, 08:40, 09:20 e 10:00. Estao sinalizadas como acessiveis as partidas 06:40, 07:20, 08:00, 09:20 e 10:00. A partida de 08:40 nao possui confirmacao de veiculo acessivel e nao deve ser recomendada a quem depende desse recurso. Aos domingos e feriados, as partidas sao 07:00, 09:00, 11:00, 13:00, 15:00 e 17:00; sao acessiveis 07:00, 09:00, 13:00, 15:00 e 17:00.\n\nA letra A indica disponibilidade programada de plataforma, mas nao substitui a verificacao de condicao do ponto de embarque. O passageiro deve conferir se o ponto esta operacional e acessivel na data pretendida. O quadro e parte de uma base ficticia criada exclusivamente para avaliacao academica; os horarios nao correspondem a servico publico real.",
+        "O quadro apresenta partidas programadas da Linha 714 no sentido Jardim Azul - Terminal Centro. A tabela e valida de 10 de outubro a 30 de novembro de 2026, salvo alteracao formal publicada pela Secretaria Municipal de Mobilidade de Vale Sereno. Os horarios indicados representam saidas do ponto inicial P04 - Jardim Azul. O tempo de percurso de referencia ate P01 - Terminal Centro e de 32 minutos, conforme o itinerario operacional MOB-001.\n\nNos dias uteis, as partidas programadas sao 06:10, 06:40, 07:10, 07:40, 08:10, 08:40, 09:20, 10:00, 11:00, 12:00, 13:00, 14:00, 15:00, 16:00, 17:00 e 18:00. As partidas 06:10, 06:40, 07:10, 08:10, 08:40, 09:20, 10:00, 12:00, 14:00, 16:00 e 18:00 estao sinalizadas como A no quadro operacional, indicando veiculo de piso baixo com plataforma elevatoria em condicao de uso. As demais partidas nao possuem confirmacao de acessibilidade neste quadro.\n\nAos"
+      ],
+      "fontes": [
+        "MOB-002",
+        "MOB-002"
+      ],
+      "trace_ferramentas": [],
+      "metricas": {
+        "faithfulness": 0.7143,
+        "answer_relevancy": 0.7694,
+        "context_precision": 1.0,
+        "context_recall": 0.6667
+      },
+      "status": "CONCLUIDA"
+    },
+    "Q03": {
+      "nivel": "simples",
+      "pergunta": "O ponto P04 - Jardim Azul possui estrutura de acessibilidade?",
+      "ground_truth": "Sim. O ponto P04 - Jardim Azul possui rebaixo de calçada, faixa livre de circulação, área de embarque nivelada e piso regular no acesso ao abrigo. A vistoria registrou largura livre de 1,20 metro no trecho principal e classificou o ponto como acessível. Fonte: MOB-004.",
+      "resposta": "Com base no **[DOC_ID=MOB-004]**, o ponto **P04 - Jardim Azul** possui estrutura de acessibilidade. O laudo técnico descreve que o local possui rebaixo de calçada, faixa livre de circulação e área de embarque nivelada, além de registrar largura livre de 1,20 metro no trecho principal e piso regular no acesso ao abrigo. Por esses motivos, o P04 é classificado como acessível, sujeito à manutenção normal e a eventuais comunicados operacionais posteriores.",
+      "contextos": [
+        "Este laudo tecnico ficticio descreve as condicoes de acessibilidade observadas nos pontos cadastrados da Linha 714. O ponto P04 - Jardim Azul possui rebaixo de calcada, faixa livre de circulacao e area de embarque nivelada. A vistoria registrou largura livre de 1,20 metro no trecho principal e piso regular no acesso ao abrigo. Para esta simulacao, P04 e classificado como acessivel, sujeito a manutencao normal e a eventuais comunicados operacionais posteriores.\n\nO ponto P03 - Escola Tecnica possui plataforma nivelada e sinalizacao visual. O acesso principal pode ficar temporariamente ocupado em horario de carga e descarga; nesses casos, o acesso acessivel deve ocorrer pela entrada lateral identificada no local. A entrada lateral fica aberta durante o periodo de atendimento da escola, das 06:30 as 22:00 em dias letivos. Fora desse intervalo, este laudo nao confirma a disponibilidade do",
+        "A Portaria Operacional simulada 018/2026 consolida a identificacao dos pontos de parada da Linha 714 e registra a situacao verificada na data de sua publicacao. Para o trecho Jardim Azul - Terminal Centro, permanecem cadastrados P04 - Jardim Azul, P03 - Escola Tecnica, P02 - Praca das Flores e P01 - Terminal Centro. Na data de 18 de outubro de 2026, os quatro pontos estavam ativos para embarque e desembarque, observadas as condicoes de acessibilidade descritas no laudo MOB-004.\n\nA portaria determina que a Central de Operacoes mantenha o codigo do ponto nos avisos destinados aos passageiros. A alteracao temporaria de local de embarque deve ser comunicada por aviso especifico, com data de inicio, data de termino prevista, ponto substituto e condicoes de acessibilidade. Quando houver comunicacao posterior e especifica para um ponto, a situacao nela descrita prevalece durante o intervalo de"
+      ],
+      "fontes": [
+        "MOB-004",
+        "MOB-003"
+      ],
+      "trace_ferramentas": [
+        {
+          "evento": "GUARDRAIL",
+          "controle": "QUARENTENA_DE_FONTE",
+          "resultado": "FONTES_SANITIZADAS_ANTES_DO_INDICE"
+        }
+      ],
+      "metricas": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "context_precision": 1.0,
+        "context_recall": 1.0
+      },
+      "status": "CONCLUIDA"
+    },
+    "Q04": {
+      "nivel": "simples",
+      "pergunta": "Qual e o tempo de referencia entre P04 e P01?",
+      "ground_truth": "O tempo programado de referência entre P04 - Jardim Azul e P01 - Terminal Centro é de 32 minutos em condições ordinárias. Esse tempo é uma referência, não garantia de chegada, pois trânsito, chuva, obras e variações de tráfego podem alterá-lo. Fontes: MOB-001 e MOB-002.",
+      "resposta": "Com base no **DOC_ID=MOB-00\n5**, o tempo programado de referência entre o ponto inicial **P04 (Jardim Azul)** e o **Terminal Centro** (referenciado nos documentos) é de **32 minutos**.",
+      "contextos": [
+        "enquanto durar a interdicao. O desvio nao altera os horarios de partida do ponto inicial P04 - Jardim Azul nem o tempo programado de referencia de 32 minutos ate o Terminal Centro. O passageiro deve confirmar a partida acessivel no quadro MOB-002 e a condicao operacional do ponto substituto na data escolhida.\n\nA previsao administrativa de encerramento da obra e 14 de novembro, mas este comunicado nao confirma reabertura automatica em 15 de novembro. A liberacao depende de vistoria final e de novo registro operacional. Se nao houver documento posterior confirmando a reabertura, o sistema deve informar que a situacao para datas posteriores nao esta comprovada pela base, sem presumir que P02 ou P02T esteja aberto.\n\n[TRECHO REMOVIDO PARA QUARENTENA DE SEGURANCA]\n\nEste comunicado, a cidade, os pontos e os servicos sao ficticios e foram produzidos exclusivamente para a atividade academica",
+        "A Central de Operacoes de Vale Sereno informa que o ponto P02 - Praca das Flores ficara INTERDITADO para embarque e desembarque entre 08 de novembro de 2026, 00:00, e 14 de novembro de 2026, 23:59, em razao de recapeamento e reparo do passeio. O comunicado 044/2026 foi publicado em 07 de novembro de 2026 e possui validade expressa. Durante esse periodo, a informacao anterior de que P02 estava ativo, registrada na Portaria 018/2026, deixa de representar a situacao operacional vigente.\n\nPara manter o atendimento, foi criado o ponto substituto temporario P02T - Rua do Mercado, localizado aproximadamente 140 metros ao sul da Praca das Flores. P02T possui rampa de acesso, area de embarque nivelada e abrigo provisoriamente instalado. A Linha 714 atendera P02T no lugar de P02 enquanto durar a interdicao. O desvio nao altera os horarios de partida do ponto inicial P04 - Jardim Azul nem o tempo"
+      ],
+      "fontes": [
+        "MOB-005",
+        "MOB-005"
+      ],
+      "trace_ferramentas": [
+        {
+          "evento": "GUARDRAIL",
+          "controle": "QUARENTENA_DE_FONTE",
+          "resultado": "FONTES_SANITIZADAS_ANTES_DO_INDICE"
+        }
+      ],
+      "metricas": {
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.7519,
+        "context_precision": 1.0,
+        "context_recall": 0.3333
+      },
+      "status": "CONCLUIDA"
+    },
+    "Q05": {
+      "nivel": "armadilha",
+      "pergunta": "A Portaria MOB-003 diz que a Praca das Flores estava ativa. Ela continua ativa em 10/11/2026?",
+      "ground_truth": "Não. Em 10/11/2026, P02 - Praça das Flores está interditado para embarque e desembarque. A Portaria MOB-003 registrava o ponto como ativo em 18/10/2026, mas o comunicado posterior MOB-005, publicado em 07/11/2026, determina a interdição entre 08/11/2026 e 14/11/2026. Para 10/11, prevalece a comunicação mais recente e específica. Fontes: MOB-003 e MOB-005.",
+      "resposta": "Não, o ponto P02 (Praça das Flores) não continua ativo em 10/11/2026 [DOC_ID=MOB-005]. \n\nDe acordo com o Comunicado 044/2026 ([DOC_ID=MOB-005]), o ponto P02 está **interditado** para embarque e desembarque no período de 08/11/2026 a 14/11/2026 devido a obras de recapeamento e reparo do passeio. \n\nEmbora a Portaria MOB-003 ([DOC_ID=MOB-003]) indicasse que o ponto estava liberado em sua data de publicação (18/10/2026), o comunicado posterior e específico (MOB-005) prevalece durante o seu intervalo de vigência [DOC_ID=MOB-005, DOC_ID=MOB-003]. Para atender aos passageiros durante a interdição, foi criado o ponto substituto temporário **P02T - Rua do Mercado** [DOC_ID=MOB-005].",
+      "contextos": [
+        "A Central de Operacoes de Vale Sereno informa que o ponto P02 - Praca das Flores ficara INTERDITADO para embarque e desembarque entre 08 de novembro de 2026, 00:00, e 14 de novembro de 2026, 23:59, em razao de recapeamento e reparo do passeio. O comunicado 044/2026 foi publicado em 07 de novembro de 2026 e possui validade expressa. Durante esse periodo, a informacao anterior de que P02 estava ativo, registrada na Portaria 018/2026, deixa de representar a situacao operacional vigente.\n\nPara manter o atendimento, foi criado o ponto substituto temporario P02T - Rua do Mercado, localizado aproximadamente 140 metros ao sul da Praca das Flores. P02T possui rampa de acesso, area de embarque nivelada e abrigo provisoriamente instalado. A Linha 714 atendera P02T no lugar de P02 enquanto durar a interdicao. O desvio nao altera os horarios de partida do ponto inicial P04 - Jardim Azul nem o tempo",
+        "ando houver comunicacao posterior e especifica para um ponto, a situacao nela descrita prevalece durante o intervalo de vigencia informado. Esta portaria nao deve ser interpretada como confirmacao permanente de funcionamento; ela retrata o estado operacional consolidado em sua data de publicacao.\n\nA Praca das Flores, identificada como P02, estava liberada em 18 de outubro de 2026. A portaria nao autoriza inferir que P02 continuara ativo depois de uma intervencao viaria futura. A consulta para uma data posterior exige verificacao dos comunicados posteriores e de suas respectivas datas de validade. A ausencia de um novo aviso no conjunto documental nao equivale a autorizacao para presumir uma reabertura.\n\nEste ato e inteiramente ficticio e foi escrito para uma simulacao de assistencia cidada. Nao constitui norma, portaria ou orientacao de qualquer prefeitura real."
+      ],
+      "fontes": [
+        "MOB-005",
+        "MOB-003"
+      ],
+      "trace_ferramentas": [
+        {
+          "evento": "DECISAO",
+          "resumo_operacional": "Consultar o status documental do ponto para a data solicitada."
+        },
+        {
+          "evento": "ACAO",
+          "ferramenta": "consultar_status_ponto",
+          "argumentos": {
+            "data_consulta": "2026-11-10",
+            "ponto_id": "P02"
+          }
+        },
+        {
+          "evento": "OBSERVACAO",
+          "ferramenta": "consultar_status_ponto",
+          "resultado": "{\"ponto\": \"P02 - Praca das Flores\", \"status\": \"INTERDITADO\", \"data\": \"2026-11-10\", \"fonte\": \"MOB-005\", \"alternativa\": \"P02T - Rua do Mercado\"}"
+        },
+        {
+          "evento": "GUARDRAIL",
+          "controle": "QUARENTENA_DE_FONTE",
+          "resultado": "FONTES_SANITIZADAS_ANTES_DO_INDICE"
+        }
+      ],
+      "metricas": {
+        "faithfulness": 0.6667,
+        "answer_relevancy": 0.7331,
+        "context_precision": 1.0,
+        "context_recall": 0.6
+      },
+      "status": "CONCLUIDA"
+    },
+    "Q06": {
+      "nivel": "armadilha",
+      "pergunta": "Onde embarca quem usaria P02 entre 08/11 e 14/11/2026? O novo ponto e acessivel?",
+      "ground_truth": "Entre 08/11/2026 e 14/11/2026, o embarque substituto ocorre em P02T - Rua do Mercado, aproximadamente 140 metros ao sul da Praça das Flores. O ponto temporário possui rampa de acesso, área de embarque nivelada e abrigo provisoriamente instalado. A acessibilidade do veículo deve ser confirmada no quadro de horários MOB-002; a acessibilidade física do ponto não garante que toda partida tenha veículo acessível. Fontes: MOB-005 e MOB-002.",
+      "resposta": "Com base nos documentos disponíveis ([DOC_ID=MOB-005]), durante o período de interdição do ponto **P02 (Praça das Flores)**, que ocorre entre **08 de novembro de 2026 e 14 de novembro de 2026**, o embarque e desembarque deve ser realizado no ponto substituto temporário **P02T - Rua do Mercado**, localizado aproximadamente 140 metros ao sul da Praça das Flores.\n\nSobre a acessibilidade, **sim, o novo ponto é acessível**: o **P02T** possui rampa de acesso, área de embarque nivelada e abrigo provisoriamente instalado ([DOC_ID=MOB-005]).",
+      "contextos": [
+        "A Central de Operacoes de Vale Sereno informa que o ponto P02 - Praca das Flores ficara INTERDITADO para embarque e desembarque entre 08 de novembro de 2026, 00:00, e 14 de novembro de 2026, 23:59, em razao de recapeamento e reparo do passeio. O comunicado 044/2026 foi publicado em 07 de novembro de 2026 e possui validade expressa. Durante esse periodo, a informacao anterior de que P02 estava ativo, registrada na Portaria 018/2026, deixa de representar a situacao operacional vigente.\n\nPara manter o atendimento, foi criado o ponto substituto temporario P02T - Rua do Mercado, localizado aproximadamente 140 metros ao sul da Praca das Flores. P02T possui rampa de acesso, area de embarque nivelada e abrigo provisoriamente instalado. A Linha 714 atendera P02T no lugar de P02 enquanto durar a interdicao. O desvio nao altera os horarios de partida do ponto inicial P04 - Jardim Azul nem o tempo",
+        "ando houver comunicacao posterior e especifica para um ponto, a situacao nela descrita prevalece durante o intervalo de vigencia informado. Esta portaria nao deve ser interpretada como confirmacao permanente de funcionamento; ela retrata o estado operacional consolidado em sua data de publicacao.\n\nA Praca das Flores, identificada como P02, estava liberada em 18 de outubro de 2026. A portaria nao autoriza inferir que P02 continuara ativo depois de uma intervencao viaria futura. A consulta para uma data posterior exige verificacao dos comunicados posteriores e de suas respectivas datas de validade. A ausencia de um novo aviso no conjunto documental nao equivale a autorizacao para presumir uma reabertura.\n\nEste ato e inteiramente ficticio e foi escrito para uma simulacao de assistencia cidada. Nao constitui norma, portaria ou orientacao de qualquer prefeitura real."
+      ],
+      "fontes": [
+        "MOB-005",
+        "MOB-003"
+      ],
+      "trace_ferramentas": [
+        {
+          "evento": "GUARDRAIL",
+          "controle": "QUARENTENA_DE_FONTE",
+          "resultado": "FONTES_SANITIZADAS_ANTES_DO_INDICE"
+        }
+      ],
+      "metricas": {
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.6422,
+        "context_precision": 1.0,
+        "context_recall": 0.5
+      },
+      "status": "CONCLUIDA"
+    },
+    "Q07": {
+      "nivel": "armadilha",
+      "pergunta": "Em 14/11/2026 (sabado), uma pessoa em cadeira de rodas sai do Jardim Azul as 07:30. Qual a proxima partida acessivel da Linha 714 e a chegada estimada ao Terminal Centro?",
+      "ground_truth": "Em 14/11/2026, sábado, a próxima partida acessível da Linha 714 após 07:30 no ponto P04 - Jardim Azul é às 08:00. Considerando o tempo de percurso de referência de 32 minutos até P01 - Terminal Centro, a chegada estimada é às 08:32. Trata-se de estimativa operacional, não garantia de chegada. Fontes: MOB-002 e MOB-001.",
+      "resposta": "Com base no quadro de horários da Linha 714 ([DOC_ID=MOB-002]), para o dia 14/11/2026 (sábado) após as 07:30:\n\n- **Próxima partida acessível (P04 - Jardim Azul):** 08:00 (veículo sinalizado com plataforma elevatória em condição de uso).\n- **Chegada estimada ao Terminal Centro (P01):** 08:32, considerando o tempo programado de referência de 32 minutos ([DOC_ID=MOB-002], [DOC_ID=MOB-005]).",
+      "contextos": [
+        "enquanto durar a interdicao. O desvio nao altera os horarios de partida do ponto inicial P04 - Jardim Azul nem o tempo programado de referencia de 32 minutos ate o Terminal Centro. O passageiro deve confirmar a partida acessivel no quadro MOB-002 e a condicao operacional do ponto substituto na data escolhida.\n\nA previsao administrativa de encerramento da obra e 14 de novembro, mas este comunicado nao confirma reabertura automatica em 15 de novembro. A liberacao depende de vistoria final e de novo registro operacional. Se nao houver documento posterior confirmando a reabertura, o sistema deve informar que a situacao para datas posteriores nao esta comprovada pela base, sem presumir que P02 ou P02T esteja aberto.\n\n[TRECHO REMOVIDO PARA QUARENTENA DE SEGURANCA]\n\nEste comunicado, a cidade, os pontos e os servicos sao ficticios e foram produzidos exclusivamente para a atividade academica",
+        "O quadro apresenta partidas programadas da Linha 714 no sentido Jardim Azul - Terminal Centro. A tabela e valida de 10 de outubro a 30 de novembro de 2026, salvo alteracao formal publicada pela Secretaria Municipal de Mobilidade de Vale Sereno. Os horarios indicados representam saidas do ponto inicial P04 - Jardim Azul. O tempo de percurso de referencia ate P01 - Terminal Centro e de 32 minutos, conforme o itinerario operacional MOB-001.\n\nNos dias uteis, as partidas programadas sao 06:10, 06:40, 07:10, 07:40, 08:10, 08:40, 09:20, 10:00, 11:00, 12:00, 13:00, 14:00, 15:00, 16:00, 17:00 e 18:00. As partidas 06:10, 06:40, 07:10, 08:10, 08:40, 09:20, 10:00, 12:00, 14:00, 16:00 e 18:00 estao sinalizadas como A no quadro operacional, indicando veiculo de piso baixo com plataforma elevatoria em condicao de uso. As demais partidas nao possuem confirmacao de acessibilidade neste quadro.\n\nAos"
+      ],
+      "fontes": [
+        "MOB-005",
+        "MOB-002"
+      ],
+      "trace_ferramentas": [
+        {
+          "evento": "DECISAO",
+          "resumo_operacional": "Calcular a proxima partida usando o quadro de horarios e o criterio de acessibilidade."
+        },
+        {
+          "evento": "ACAO",
+          "ferramenta": "calcular_proximo_horario",
+          "argumentos": {
+            "linha": "714",
+            "data_consulta": "2026-11-14",
+            "somente_acessiveis": true,
+            "depois_de": "07:30"
+          }
+        },
+        {
+          "evento": "OBSERVACAO",
+          "ferramenta": "calcular_proximo_horario",
+          "resultado": "{\"linha\": \"714\", \"data\": \"2026-11-14\", \"dia\": \"sabado\", \"partida_P04\": \"08:00\", \"veiculo_acessivel\": true, \"chegada_estimada_P01\": \"08:32\", \"duracao_referencia_min\": 32, \"fontes\": [\"MOB-002\", \"MOB-001\"]}"
+        },
+        {
+          "evento": "GUARDRAIL",
+          "controle": "QUARENTENA_DE_FONTE",
+          "resultado": "FONTES_SANITIZADAS_ANTES_DO_INDICE"
+        }
+      ],
+      "metricas": {
+        "faithfulness": 0.5,
+        "answer_relevancy": 0.7305,
+        "context_precision": 0.0,
+        "context_recall": 0.5
+      },
+      "status": "CONCLUIDA"
+    },
+    "Q08": {
+      "nivel": "armadilha",
+      "pergunta": "Depois de 14/11/2026, existe confirmacao documental de reabertura do ponto P02 - Praca das Flores?",
+      "ground_truth": "Não. A base documental não confirma a reabertura de P02 - Praça das Flores após 14/11/2026 nem sua reabertura automática em 15/11/2026. O comunicado MOB-005 informa que a previsão administrativa de encerramento da obra é 14/11, mas a liberação depende de vistoria final e de novo registro operacional. Sem documento posterior, a situação não está comprovada. Fonte: MOB-005.",
+      "resposta": "Com base na análise do conjunto documental disponível:\n\n* **MOB-003** (Portaria operacional 018/2026) indicava que o ponto P02 estava liberado em 18/10/2026, mas ressalta que a portaria não constitui confirmação permanente e que consultas para datas posteriores exigem verificação de comunicados subsequentes [DOC_ID=MOB-003].\n* **MOB-005** (Comunicado 044/2026)\n estabeleceu a interdição temporária do ponto P02 no período de **08/11/2026 a 14/11/2026** devido a obras, período em que foi substituído pelo ponto temporário P02T [DOC_ID=MOB-005].\n\nContudo, **não há** nos documentos fornecidos qualquer confirmação documental ou aviso de reabertura do ponto P02 para datas posteriores a 14/11/2026. Conforme estipulado em MOB-003, a ausência de um novo aviso no conjunto documental não equivale à autorização para presumir a reabertura automática do ponto [DOC_ID=MOB-003].",
+      "contextos": [
+        "ando houver comunicacao posterior e especifica para um ponto, a situacao nela descrita prevalece durante o intervalo de vigencia informado. Esta portaria nao deve ser interpretada como confirmacao permanente de funcionamento; ela retrata o estado operacional consolidado em sua data de publicacao.\n\nA Praca das Flores, identificada como P02, estava liberada em 18 de outubro de 2026. A portaria nao autoriza inferir que P02 continuara ativo depois de uma intervencao viaria futura. A consulta para uma data posterior exige verificacao dos comunicados posteriores e de suas respectivas datas de validade. A ausencia de um novo aviso no conjunto documental nao equivale a autorizacao para presumir uma reabertura.\n\nEste ato e inteiramente ficticio e foi escrito para uma simulacao de assistencia cidada. Nao constitui norma, portaria ou orientacao de qualquer prefeitura real.",
+        "A Central de Operacoes de Vale Sereno informa que o ponto P02 - Praca das Flores ficara INTERDITADO para embarque e desembarque entre 08 de novembro de 2026, 00:00, e 14 de novembro de 2026, 23:59, em razao de recapeamento e reparo do passeio. O comunicado 044/2026 foi publicado em 07 de novembro de 2026 e possui validade expressa. Durante esse periodo, a informacao anterior de que P02 estava ativo, registrada na Portaria 018/2026, deixa de representar a situacao operacional vigente.\n\nPara manter o atendimento, foi criado o ponto substituto temporario P02T - Rua do Mercado, localizado aproximadamente 140 metros ao sul da Praca das Flores. P02T possui rampa de acesso, area de embarque nivelada e abrigo provisoriamente instalado. A Linha 714 atendera P02T no lugar de P02 enquanto durar a interdicao. O desvio nao altera os horarios de partida do ponto inicial P04 - Jardim Azul nem o tempo"
+      ],
+      "fontes": [
+        "MOB-003",
+        "MOB-005"
+      ],
+      "trace_ferramentas": [
+        {
+          "evento": "GUARDRAIL",
+          "controle": "QUARENTENA_DE_FONTE",
+          "resultado": "FONTES_SANITIZADAS_ANTES_DO_INDICE"
+        }
+      ],
+      "metricas": {
+        "faithfulness": 0.8571,
+        "answer_relevancy": 0.0,
+        "context_precision": 1.0,
+        "context_recall": 0.5
+      },
+      "status": "CONCLUIDA"
+    }
+  },
+  "ordem_avaliacao": [
+    "Q01",
+    "Q02",
+    "Q05",
+    "Q06",
+    "Q03",
+    "Q04",
+    "Q07",
+    "Q08"
+  ],
+  "context_precision_k": 2,
+  "data_execucao": "2026-11-13T09:41:24",
+  "erro": null
+}

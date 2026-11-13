@@ -1,0 +1,16 @@
+DOC_ID: MOB-004
+TITULO: Laudo tecnico simulado de acessibilidade dos pontos da Linha 714
+DATA_PUBLICACAO: 2026-09-20
+VALIDADE_INICIO: 2026-09-20
+VALIDADE_FIM: 2026-12-31
+TEMA: acessibilidade
+AUTORIDADE: 4
+TIPO_FONTE: laudo_tecnico
+---
+Este laudo tecnico ficticio descreve as condicoes de acessibilidade observadas nos pontos cadastrados da Linha 714. O ponto P04 - Jardim Azul possui rebaixo de calcada, faixa livre de circulacao e area de embarque nivelada. A vistoria registrou largura livre de 1,20 metro no trecho principal e piso regular no acesso ao abrigo. Para esta simulacao, P04 e classificado como acessivel, sujeito a manutencao normal e a eventuais comunicados operacionais posteriores.
+
+O ponto P03 - Escola Tecnica possui plataforma nivelada e sinalizacao visual. O acesso principal pode ficar temporariamente ocupado em horario de carga e descarga; nesses casos, o acesso acessivel deve ocorrer pela entrada lateral identificada no local. A entrada lateral fica aberta durante o periodo de atendimento da escola, das 06:30 as 22:00 em dias letivos. Fora desse intervalo, este laudo nao confirma a disponibilidade do caminho lateral, ainda que o ponto continue cadastrado. Para esta simulacao, considere dias letivos de segunda a sexta-feira, exceto 12/10/2026, 02/11/2026 e 20/11/2026, datas sem atendimento escolar. Nao ha outras suspensoes escolares registradas na base documental para o periodo coberto.
+
+O ponto P02 - Praca das Flores apresenta ressalto entre calcada e plataforma e ausencia de piso tatil direcional continuo na aproximacao. Na vistoria de setembro, a equipe recomendou adequacao e classificou o ponto como acessibilidade parcial, nao como plenamente acessivel. O ponto P01 - Terminal Centro possui plataforma nivelada, faixa tatil e area de giro para cadeira de rodas, sendo classificado como acessivel.
+
+A classificacao tecnica nao comprova que o ponto esteja aberto em determinada data. A condicao operacional deve ser consultada em itinerarios, portarias e comunicados com validade. A palavra acessivel neste documento descreve somente a estrutura observada na vistoria, nao garante funcionamento continuo nem disponibilidade de veiculo em toda partida. O documento nao estabelece limite etario, gratuidade, prioridade legal ou elegibilidade de passageiros; esses assuntos nao podem ser inferidos a partir deste laudo.

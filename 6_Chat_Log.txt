@@ -1,0 +1,42 @@
+TRAMA CÍVICA — CHAT LOG / REGISTRO DE USO DE IA
+Global Solution 2026.2 | CitizenTech | Turma 1CCPJ
+
+FINALIDADE
+Registro resumido e transparente de como ferramentas de IA foram utilizadas no planejamento, implementação, depuração, avaliação e documentação do protótipo.
+
+FERRAMENTAS UTILIZADAS
+- ChatGPT: apoio ao planejamento da arquitetura RAG, organização das tarefas, revisão de código, análise de erros de integração, elaboração de documentação, organização dos entregáveis e interpretação dos resultados.
+- Google Gemini Developer API: provedor utilizado pelo protótipo na execução concluída. Modelo efetivamente selecionado: gemini-3.5-flash-lite.
+- Sentence Transformers: geração de embeddings com sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.
+- Google Colab: ambiente hospedado utilizado para executar o notebook.
+
+DECISÕES TÉCNICAS E MUDANÇA DE PROVEDOR
+1. O projeto foi inicialmente preparado para utilizar Ollama Cloud, conforme o briefing, com autenticação via OLLAMA_API_KEY nos Secrets do Colab.
+2. Nos testes realizados com os modelos Cloud escolhidos, a conta utilizada recebeu respostas HTTP 402. A política oficial atual do Ollama informa que o plano gratuito possui uso inicial limitado a determinados modelos e que o acesso a modelos adicionais pode exigir créditos por uso ou plano com créditos incluídos. O código 402 foi compatível com uma restrição de cobrança/créditos/acesso, mas não permite identificar sozinho a condição exata da conta.
+3. Foi testada uma alternativa com Groq. A avaliação completa não foi viável devido ao limite de tokens por minuto (TPM) da modalidade gratuita encontrado durante os testes.
+4. Para concluir a execução integral, a integração foi adaptada para Google Gemini Developer API, com a chave GEMINI_API_KEY armazenada nos Secrets do Colab.
+5. O modelo gemini-3.5-flash-lite foi o modelo efetivamente validado para a execução concluída. Foram incluídos tratamento de falhas temporárias HTTP 503 e checkpoints para preservar o progresso da avaliação.
+
+POLÍTICA DO OLLAMA — DISTINÇÃO ENTRE LOCAL E CLOUD
+O uso local do Ollama executa modelos no hardware disponível e não consome créditos do Ollama Cloud. Já a modalidade Cloud tem cotas/créditos por uso: a faixa gratuita inclui uma quantidade inicial de uso e um conjunto limitado de modelos; modelos Cloud adicionais podem exigir créditos ou plano pago. A página oficial consultada em 13/11/2026 apresenta preços por milhão de tokens e créditos incluídos nos planos. Portanto, não se concluiu que todo Ollama seja pago nem que não exista modalidade gratuita. A dificuldade específica do projeto foi acessar os modelos Cloud selecionados na conta utilizada sem adicionar custo.
+
+Referências oficiais:
+- https://ollama.com/pricing
+- https://ollama.com/blog/transparent-pricing
+- https://ollama.com/terms
+
+AVALIAÇÃO COM RAGAS E USO DE IA NAS REFERÊNCIAS
+A avaliação concluída processou 8/8 perguntas e quatro métricas por pergunta. Os ground truths utilizados foram registrados como rascunhos assistidos por IA, com autoria do trio não declarada e revisão/validação manual pendente. O notebook registrou validacao_autoria_trio = False. Assim, os scores são diagnósticos e não devem ser apresentados como avaliação final com referências autorais validadas pelo grupo.
+
+MÉDIAS REGISTRADAS NA EXECUÇÃO
+- Faithfulness: 0,7798
+- Answer Relevancy: 0,7025
+- Context Precision: 0,8750
+- Context Recall: 0,5958
+- Guardrails: 6/6 testes aprovados, conforme o registro da execução.
+
+LIMITAÇÕES E TRANSPARÊNCIA
+- Gemini é uma substituição do Ollama Cloud prescrito no briefing. A aderência acadêmica dessa mudança depende de autorização expressa do professor.
+- Não foi afirmado que o professor autorizou a substituição, pois nenhuma evidência de autorização foi fornecida para este registro.
+- Município, Linha 714, paradas, horários e comunicados são sintéticos/fictícios.
+- Este arquivo é um registro resumido das ferramentas e decisões. Não é uma transcrição literal de todas as conversas, prompts, comandos e mensagens de terminal. O grupo deve complementar o registro caso a disciplina exija histórico integral.

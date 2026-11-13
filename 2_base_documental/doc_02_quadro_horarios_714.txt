@@ -1,0 +1,16 @@
+DOC_ID: MOB-002
+TITULO: Quadro de horarios da Linha 714 - vigencia de outubro a novembro de 2026
+DATA_PUBLICACAO: 2026-10-04
+VALIDADE_INICIO: 2026-10-10
+VALIDADE_FIM: 2026-11-30
+TEMA: horarios
+AUTORIDADE: 5
+TIPO_FONTE: quadro_horarios
+---
+O quadro apresenta partidas programadas da Linha 714 no sentido Jardim Azul - Terminal Centro. A tabela e valida de 10 de outubro a 30 de novembro de 2026, salvo alteracao formal publicada pela Secretaria Municipal de Mobilidade de Vale Sereno. Os horarios indicados representam saidas do ponto inicial P04 - Jardim Azul. O tempo de percurso de referencia ate P01 - Terminal Centro e de 32 minutos, conforme o itinerario operacional MOB-001.
+
+Nos dias uteis, as partidas programadas sao 06:10, 06:40, 07:10, 07:40, 08:10, 08:40, 09:20, 10:00, 11:00, 12:00, 13:00, 14:00, 15:00, 16:00, 17:00 e 18:00. As partidas 06:10, 06:40, 07:10, 08:10, 08:40, 09:20, 10:00, 12:00, 14:00, 16:00 e 18:00 estao sinalizadas como A no quadro operacional, indicando veiculo de piso baixo com plataforma elevatoria em condicao de uso. As demais partidas nao possuem confirmacao de acessibilidade neste quadro.
+
+Aos sabados, as partidas sao 06:40, 07:20, 08:00, 08:40, 09:20 e 10:00. Estao sinalizadas como acessiveis as partidas 06:40, 07:20, 08:00, 09:20 e 10:00. A partida de 08:40 nao possui confirmacao de veiculo acessivel e nao deve ser recomendada a quem depende desse recurso. Aos domingos e feriados, as partidas sao 07:00, 09:00, 11:00, 13:00, 15:00 e 17:00; sao acessiveis 07:00, 09:00, 13:00, 15:00 e 17:00.
+
+A letra A indica disponibilidade programada de plataforma, mas nao substitui a verificacao de condicao do ponto de embarque. O passageiro deve conferir se o ponto esta operacional e acessivel na data pretendida. O quadro e parte de uma base ficticia criada exclusivamente para avaliacao academica; os horarios nao correspondem a servico publico real.

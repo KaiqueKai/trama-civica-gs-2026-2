@@ -1,0 +1,36 @@
+TRAMA CÍVICA — CERTIFICAÇÃO E IDENTIFICAÇÃO DA EQUIPE
+Global Solution 2026.2 | CitizenTech | Prompt and Artificial Intelligence
+Professor: Jorge Luiz Gomes | Turma: 1CCPJ | Modalidade: Trio
+
+INTEGRANTES
+1. Kaique da Silva Assis — RM 572718
+2. Andre Debiazzi Baldi Negrini — RM 569062
+3. Vinicius Cristal de Oliveira — RM 572049
+
+DIVISÃO REAL DE RESPONSABILIDADES INFORMADA PARA ESTE PROJETO
+
+K**Kaique da Silva Assis — RM 572718:** responsável pelo desenvolvimento técnico inicial do TRAMA CÍVICA, incluindo planejamento, arquitetura, implementação, integração dos componentes, organização da base documental, tratamento de erros e execução do notebook. Na etapa de fechamento, realiza a revisão técnica da implementação e a conferência da execução.
+
+**Andre Debiazzi Baldi Negrini — RM 569062:** responsável pela auditoria da base documental MOB-001 a MOB-005, conferência da consistência das informações utilizadas nas respostas Q01–Q04 e revisão dos mecanismos de segurança e guardrails. Participa também da apresentação em vídeo.
+
+**Vinicius Cristal de Oliveira — RM 572049:** responsável pela conferência do arquivo de avaliação RAGAS, validação dos resultados das 32 métricas, análise dos resultados das perguntas Q05–Q08 e revisão da documentação final e da estrutura de entrega. Participa também da apresentação em vídeo.
+
+LINKS DA ENTREGA
+Repositório público: https://github.com/KaiqueKai/trama-civica-gs-2026-2
+Vídeo de demonstração (YouTube não listado, até 3 minutos): ver arquivo 7_demo_video_url.txt
+
+DECLARAÇÕES IMPORTANTES
+- A implementação efetivamente executada utilizou Google Gemini Developer API, modelo gemini-3.5-flash-lite, em substituição ao Ollama Cloud indicado no briefing. Esta substituição deve ser comunicada ao professor e depende de autorização expressa; não declarar autorização sem evidência.
+- A execução RAGAS foi diagnóstica: os oito ground truths utilizados foram registrados como rascunhos assistidos por IA, sem autoria validada pelo trio (validacao_autoria_trio = False). Revisão e validação manual das referências ainda são necessárias para que sejam apresentadas como autorais.
+- Os resultados do README devem ser comparados com o arquivo JSON original exportado do Colab.
+- Todos os integrantes devem conferir a descrição de suas participações antes de assinar.
+
+CONFIRMAÇÃO E ASSINATURAS DOS PRÓPRIOS INTEGRANTES
+
+Kaique da Silva Assis: __________________________________  Data: ____/____/______
+
+Andre Debiazzi Baldi Negrini: ___________________________  Data: ____/____/______
+
+Vinicius Cristal de Oliveira: ____________________________  Data: ____/____/______
+
+Observação: as contribuições foram descritas conforme informação fornecida pelo responsável pelo desenvolvimento. As assinaturas devem ser feitas pelos próprios integrantes; este arquivo não simula nem substitui as assinaturas.

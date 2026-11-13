@@ -1,0 +1,16 @@
+DOC_ID: MOB-001
+TITULO: Itinerario operacional da Linha 714 - Jardim Azul / Terminal Centro
+DATA_PUBLICACAO: 2026-10-02
+VALIDADE_INICIO: 2026-10-05
+VALIDADE_FIM: 2026-11-30
+TEMA: itinerario
+AUTORIDADE: 4
+TIPO_FONTE: itinerario_operacional
+---
+A Secretaria Municipal de Mobilidade de Vale Sereno publica este itinerario simulado para a Linha 714, que conecta o bairro Jardim Azul ao Terminal Centro. O percurso de referencia no sentido bairro-centro inicia no ponto P04 - Jardim Azul, segue pelo ponto P03 - Escola Tecnica, passa pelo ponto P02 - Praca das Flores e termina no ponto P01 - Terminal Centro. O percurso inverso realiza a sequencia na ordem contraria, respeitadas as orientacoes operacionais do motorista e da fiscalizacao.
+
+O tempo programado entre P04 e P01 e de 32 minutos em condicoes ordinarias. Esse valor e uma referencia operacional, nao uma garantia de chegada: ocorrencias viarias, chuva, obras e variacoes de trafego podem alterar o tempo real. O passageiro deve considerar margem adicional quando houver compromisso com horario fixo. A linha atende os dias uteis e sabados; aos domingos e feriados opera em tabela especifica, publicada no quadro de horarios vigente.
+
+A identificacao dos pontos e padronizada para permitir consulta por codigo. P01 identifica o Terminal Centro; P02 identifica a Praca das Flores; P03 identifica a Escola Tecnica; e P04 identifica o Jardim Azul. O codigo do ponto deve ser usado em comunicacoes com a Central de Operacoes. A existencia de um ponto neste itinerario nao significa, por si so, que ele esteja liberado em qualquer data: avisos de interdicao, desvios ou substituicao temporaria podem alterar o embarque efetivo.
+
+Para acessibilidade, o passageiro deve consultar simultaneamente o laudo de acessibilidade e os comunicados operacionais mais recentes. Em caso de divergencia entre este itinerario e comunicado posterior com periodo de validade expresso, a operacao deve observar o comunicado posterior durante sua vigencia. Este documento pertence a uma simulacao academica; nenhum endereco, linha, telefone ou servico aqui descrito representa uma operacao municipal real.

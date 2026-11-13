@@ -1,0 +1,16 @@
+DOC_ID: MOB-003
+TITULO: Portaria operacional 018/2026 - consolidacao dos pontos da Linha 714
+DATA_PUBLICACAO: 2026-10-18
+VALIDADE_INICIO: 2026-10-18
+VALIDADE_FIM: 2026-11-30
+TEMA: status_pontos
+AUTORIDADE: 4
+TIPO_FONTE: portaria_operacional
+---
+A Portaria Operacional simulada 018/2026 consolida a identificacao dos pontos de parada da Linha 714 e registra a situacao verificada na data de sua publicacao. Para o trecho Jardim Azul - Terminal Centro, permanecem cadastrados P04 - Jardim Azul, P03 - Escola Tecnica, P02 - Praca das Flores e P01 - Terminal Centro. Na data de 18 de outubro de 2026, os quatro pontos estavam ativos para embarque e desembarque, observadas as condicoes de acessibilidade descritas no laudo MOB-004.
+
+A portaria determina que a Central de Operacoes mantenha o codigo do ponto nos avisos destinados aos passageiros. A alteracao temporaria de local de embarque deve ser comunicada por aviso especifico, com data de inicio, data de termino prevista, ponto substituto e condicoes de acessibilidade. Quando houver comunicacao posterior e especifica para um ponto, a situacao nela descrita prevalece durante o intervalo de vigencia informado. Esta portaria nao deve ser interpretada como confirmacao permanente de funcionamento; ela retrata o estado operacional consolidado em sua data de publicacao.
+
+A Praca das Flores, identificada como P02, estava liberada em 18 de outubro de 2026. A portaria nao autoriza inferir que P02 continuara ativo depois de uma intervencao viaria futura. A consulta para uma data posterior exige verificacao dos comunicados posteriores e de suas respectivas datas de validade. A ausencia de um novo aviso no conjunto documental nao equivale a autorizacao para presumir uma reabertura.
+
+Este ato e inteiramente ficticio e foi escrito para uma simulacao de assistencia cidada. Nao constitui norma, portaria ou orientacao de qualquer prefeitura real.
