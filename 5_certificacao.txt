@@ -17,7 +17,7 @@ K**Kaique da Silva Assis — RM 572718:** responsável pelo desenvolvimento téc
 
 LINKS DA ENTREGA
 Repositório público: https://github.com/KaiqueKai/trama-civica-gs-2026-2
-Vídeo de demonstração (YouTube não listado, até 3 minutos): ver arquivo 7_demo_video_url.txt
+Vídeo de demonstração: https://youtu.be/SG77I0SLXZM
 
 DECLARAÇÕES IMPORTANTES
 - A implementação efetivamente executada utilizou Google Gemini Developer API, modelo gemini-3.5-flash-lite, em substituição ao Ollama Cloud indicado no briefing. Esta substituição deve ser comunicada ao professor e depende de autorização expressa; não declarar autorização sem evidência.
@@ -25,12 +25,3 @@ DECLARAÇÕES IMPORTANTES
 - Os resultados do README devem ser comparados com o arquivo JSON original exportado do Colab.
 - Todos os integrantes devem conferir a descrição de suas participações antes de assinar.
 
-CONFIRMAÇÃO E ASSINATURAS DOS PRÓPRIOS INTEGRANTES
-
-Kaique da Silva Assis: __________________________________  Data: ____/____/______
-
-Andre Debiazzi Baldi Negrini: ___________________________  Data: ____/____/______
-
-Vinicius Cristal de Oliveira: ____________________________  Data: ____/____/______
-
-Observação: as contribuições foram descritas conforme informação fornecida pelo responsável pelo desenvolvimento. As assinaturas devem ser feitas pelos próprios integrantes; este arquivo não simula nem substitui as assinaturas.
